@@ -112,7 +112,7 @@ class Main{
             System.out.print("\nEnter your choice (1-Issue Book, 2-Return Book, 3-Add Book, 4-Show Avaliable Books, 5-Quit, 6-Help): ");
             try{ch=sc.nextInt();} catch(Exception e){System.out.println("Invalid value entered"); System.exit(0);}
 
-            if((ch >= 1 && ch <= 3) && (ch!=4)){
+            if(ch >= 1 && ch <= 3){
             System.out.print("\nEnter name of the book here: ");
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             book = br.readLine();
